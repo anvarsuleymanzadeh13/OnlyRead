@@ -1,0 +1,1043 @@
+*{
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+/*-----------------------------------------------HEADER----------------------------------*/
+header{
+	position: relative;
+	background-color: #F7EEEF;
+	width: 100%;
+	position: sticky;
+	top: 0px;
+	z-index: 5;
+	opacity: 0.8;
+}
+header ul.first{ 
+	list-style-type: none;
+	position: absolute;
+	right: 40px;
+}
+header ul.second{ 
+	list-style-type: none;
+	background-color: #F7EEEF;
+	position: absolute;
+	top: 60px;
+	right: -5px;
+	width: 150px;
+	z-index: 5;
+}
+header ul.second li{ 
+	display: none;
+}
+header ul li a{
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	color: #6C4A3A;
+	padding: 18px;
+	font-size: 20px;
+}
+header ul li a:hover{
+	transition: 0.5s all;
+	color: rgb(255, 102, 0);
+}
+header ul.first li{
+	float: left;
+}
+@font-face{
+	font-family: myfont;
+	src: url(myfonts/Broadway.otf);
+}
+header div.logo a{
+	line-height: 20px;
+	font-size: 40px;
+	margin: 10px 40px ;
+	font-family: myfont;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	color: #6C4A3A;
+	padding: 10px;
+	float: left;
+}
+header div.logo a:hover{
+	color: orangered;
+}
+header div.menu{
+	display: none;
+	position: absolute;
+	right: 5px;
+}
+header div.menu button{
+	width: 35px;
+	height: 30px;
+	margin-top: 13px;
+	padding: 0;
+	border: none;
+	font-size: 25px;
+	color: #6C4A3A;
+	background-color: #F7EEEF;
+	cursor: pointer;
+	outline: none;
+}
+header div.search{
+	position: absolute;
+	right: 5px;
+}
+header div.search button{
+	width: 35px;
+	height: 28px;
+	margin-top: 15px;
+	float: left;
+	padding: 0;
+	background-color: #F7EEEF;
+	border: none;
+	font-size: 22px;
+	color: #6C4A3A;
+	cursor: pointer;
+	outline: none;
+}
+header div.search button:hover{
+	color: red;
+}
+header input{
+	display: none;
+	width: 100px;
+	float: left;
+	margin-top: 15px;
+	height: 28px;
+	font-size: 15px;
+	outline: none;
+	border: none;
+	padding: 5px;
+}
+header input:hover{
+	border: 1px solid rgb(81, 255, 0);
+}
+/*-----------------------------------------------------CONTAINER & BACKIMAGE----------------------------------------*/
+div#container{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+div.backimage{
+	transition: 0.5s all;
+	width: 100%;
+	height: 550px;
+	background-image: url(photos/backbooks1.jpg);
+	background-size: 100% 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+div#container h1{
+	text-align: center;
+	font-size: 35px;
+	color: #6C4A3A;
+	margin-top: 60px;
+	letter-spacing: 10px;
+}
+div.download{
+	width: 100%;
+}
+div.buttons{
+	height: 12px;
+	margin-top: 400px;
+}
+div.buttons div{
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	opacity: 0.5;
+	background-color: azure;
+	float: left;
+	margin: 3px;
+	cursor: pointer;
+}
+
+/*------------------------------------HOME SEC1-----------------------------------*/
+div.sec1{
+	width: 100%;
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+	margin-bottom: 40px;
+}
+div.sec1 h4{
+	font-size: 18px;
+	color: #6C4A3A;
+	margin: 46.5px 5px 0px 0px;
+}
+div.category button{
+	font-size: 18px;
+	font-weight: bold;
+	color: #6C4A3A;
+	background-color: #F8C363;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	width: 150px;
+	height: 35px;
+	margin: 40px 0px 0px 0px;
+}
+div.category button:hover{
+	color: black;
+	background-color: rgb(253, 127, 81);
+}
+div.sec1 button i{
+	margin-left: 5px;
+}
+div.categories{
+	display: none;
+	width: 150px;
+	position: absolute;
+	top: 77.5px;
+	background-color: #F7EEEF;
+
+}
+div.categories input{
+	width: 100%;
+	height: 30px;
+	outline: none;
+	font-size: 15px;
+	cursor: pointer;
+	border: none;
+	color: #6C4A3A;
+	background-color: #F7EEEF;
+
+}
+div.categories input:hover{
+	background-color: rgb(240, 177, 155);
+	color: black;
+}
+div.books{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+div.sira{
+	width: 20%;
+	height: 300px;
+	padding: 20px;
+}
+div.books img{
+	width: 100%;
+	height: 85%;
+	cursor: pointer;
+}
+div.books button{
+	width: 100%;
+	height: 14%;
+	margin-top: 1%;
+	color: #6C4A3A;
+	background-color: #F8C363;
+	border: none;
+	font-size: 17px;
+	outline: none;
+	border-radius: 5px;
+	line-height: 10px;
+	cursor: pointer;
+	margin-left: 0px;
+}
+div.books button:hover{
+	transition: 0.5s all;
+	color: black;
+	background-color: rgb(253, 127, 81);
+}
+div.books img:hover{
+	outline: 3px solid rgb(81, 255, 0);
+}
+/*------------------------------------HOME SEC2-------------------------------------------------*/
+div.sec2{
+	width: 100%;
+	background-color: white;
+	text-align: center;
+	padding-bottom: 50px;
+}
+div.sec2 h2{
+	color: #6C4A3A;
+	margin: 40px 0 20px 0;
+}
+div.sec2 div.news{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+div.sec2 div.ikili{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+div.sec2 div.news div.new, div.sec2 div.ikili div.new{
+	width: 10%;
+	height: 150px;
+	cursor: pointer;
+	padding: 10px;
+}
+div.sec2 div.news div.new img, div.sec2 div.ikili div.new img{
+	width: 100%;
+	height: 130px;
+}
+div.sec2 a,div.sec3 a,div.sec4 a,div.sec5 a{
+	font-size: 15px;
+	color: #3088C9;
+	text-decoration: none;
+}
+div.new:hover{
+	opacity: 0.5;
+}
+/*---------------------------------Footer-----------------------------------------------------*/
+footer{
+	width: 100%;
+	background-color: rgb(9, 41, 59);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 15px 25px;
+}
+footer div.legs{
+	width: 25%;
+	text-align: center;
+}
+footer p.bash{
+	font-size: 20px;
+	color: white;
+}
+div.legs div,div.legs p,div.legs li{
+	margin: 10px;
+}
+footer ul li{
+	list-style-type: none;
+}
+footer a{
+	text-decoration: none;
+	color: white;
+	margin-top: 20px;
+}
+footer a:hover{
+	text-decoration: underline;
+	color: rgb(255, 102, 0);
+}
+footer i{
+	font-size: 32px;
+	margin: 10px 10px 0px 0px;
+	color: white;
+}
+footer i:hover{
+	color: rgb(255, 102, 0);
+}
+hr.ikincihr{
+	border: .5px solid white;
+	width: 90%;
+	margin-top: 20px;
+}
+footer div.copy{
+	width: 100%;
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+/* ------------------------------------------------------WP---------------------------------------- */
+div.wp{
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+div.wp img{
+	width: 100%;
+	height: 100%;
+}
+/*------------------------LOGIN---------------------------------*/
+div.login{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+div.login div.bashliq{
+	background-color: #F9F1EF;
+	width: 100%;
+	height: 145px;
+}
+div.login div.bashliq h2{
+	color: #6C4A3A;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+div.loginform{
+	margin: 10px;
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+div.loginform img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+div.login div.form{
+	width: 400px;
+	position: absolute;
+	text-align: center;
+	background-color: white;
+	padding: 20px;
+	display: none;
+	border-radius: 10px;
+}
+div.login div.form input{
+	width: 50%;
+	height: 30px;
+	outline: none;
+	font-size: 17px;
+	padding: 10px;
+	border: none;
+	border-bottom: 1px solid orange;
+	margin: 5px auto;
+}
+div.login div.form button{
+	width: 80px;
+	height: 30px;
+	outline: none;
+	font-size: 15px;
+	padding: 10px;
+	border-radius: 2px;
+	margin: 5px auto;
+	background-color: #F8C363;
+	color: #6C4A3A;
+	line-height: 10px;
+	border: none;
+	cursor: pointer;
+}
+div.login div.form input:hover{
+	border-bottom: 1px solid rgb(81, 255, 0);
+}
+.login div.form h2{
+	color: #6C4A3A;
+}
+div.login div.form button:hover{
+	background-color: rgb(253, 127, 81);
+	color: black;
+}
+div.login div.form a{
+	color: #6C4A3A;
+	text-decoration: none;
+}
+div.login div.form a:hover{
+	text-decoration: underline;
+	color: orangered;
+}
+div.login div.form .margin1{
+	margin: auto;
+}
+/*-----------------------SIGNUP----------------------------*/
+div.signup{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+div.signup div.bashliq{
+	background-color: #F9F1EF;
+	width: 100%;
+	height: 145px;
+}
+div.signup div.bashliq h2{
+	color: #6C4A3A;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+div.signupform{
+	margin: 10px;
+	width: 100%;
+	height: 600px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div.signupform img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0.9;
+}
+div.signup h2,label{
+	margin-left: 2%;
+	color: #6C4A3A;
+}
+div.signup div.form1{
+	width: 500px;
+	position: absolute;
+	background-color: white;
+	padding: 2%;
+	border-radius: 10px;
+	display: none;
+}
+div.signup div.form1 input.names,input.diger{
+	height: 30px;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid orange;
+	font-size: 17px;
+}
+div.signup div.form1 input:hover{
+	border-bottom: 1px solid rgb(81, 255, 0);
+}
+div.signup div.form1 input.names{
+	width: 100%;
+	font-size: 17px;
+}
+div.signup div.form1 input.name2{
+		margin: 4% 0 0 0;
+}
+div.signup div.form1 input.diger{
+	width: 100%;
+}
+div.signup div.form1 input.span{
+	cursor: pointer;
+}
+div.signup div.form1 button{
+	width: 100px;
+	color: #6C4A3A;
+	height: 30px;
+	background-color: #F8C363;
+	line-height: 20px;
+	margin: 2%;
+	border: none;
+	outline: none;
+	border-radius: 2px;
+	cursor: pointer;
+	font-size: 14px;
+}
+div.signup div.form1 button:hover{
+	background-color: rgb(253, 127, 81);
+	color: black;
+}
+div.signup div.form1 a{
+	color: #6C4A3A;
+	text-decoration: none;
+}
+div.signup div.form1 a:hover{
+	text-decoration: underline;
+	color: orangered;
+}
+/*-----------------------------------CONTACT---------------------------*/
+div.contact{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+div.contact div.bashliq{
+	background-color: #F9F1EF;
+	width: 100%;
+	height: 145px;
+}
+div.contact div.bashliq h2{
+	color: #6C4A3A;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+div.contact div.meetus{
+	width: 100%;
+	margin: 0px 10px 10px 10px;
+	background-image: url(photos/backbooks5.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+div.meets{
+	height: 400px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+div.meetus div.meet1{
+	width: 50%;
+	color: white;
+	padding: 30px 100px;
+}
+div.meetus div.meet2{
+	width: 50%;
+	padding: 30px 100px;
+	color: white;
+	
+}
+div.contact div.meetus h2{
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 30px;
+}
+div.contact div.meetus div.meet1 p{
+	font-size: 18px;
+	font-weight: bold;
+}
+div.contact div.meetus div.meet2 p{
+	font-size: 18px;
+	font-weight: bold;
+}
+div.contact div.meetus div.meet2 textarea{
+	resize: none;
+	width: 100%;
+	height: 120px;
+	border: none;
+	outline: none;
+	font-size: 15px;
+	border-radius: 5px;
+	padding: 10px;
+} 
+div.contact div.meetus div.meet2 textarea:hover{
+	border: 1px solid rgb(47, 255, 75);
+} 
+div.contact div.meetus div.meet2 button{
+	font-size: 17px;
+	height: 30px;
+	width: 70px;
+	background-color: #F8C363;
+	color: #6C4A3A;
+	line-height: 20px;
+	border-radius: 2px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+div.contact div.meetus div.meet2 button:hover{
+	background-color: rgb(253, 127, 81);
+	color: black;
+}
+div.contact div.map{
+	width: 100%;
+	height: 500px;
+	padding: 10px;
+}
+div.map iframe{
+	width: 100%;
+	height: 100%;
+}
+/*---------------------------------------ABOUT--------------------------*/
+div.about{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+div.about div.bashliq{
+	background-color: #F9F1EF;
+	width: 100%;
+	height: 145px;
+}
+div.about div.bashliq h2{
+	color: #6C4A3A;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+div.aboutus{
+	width: 100%;
+	height: 500px;
+}
+div.aboutus img{
+	width: 100%;
+	height: 100%;
+}
+div.aboutitem{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+div#story, div#team, div#customers{
+	width: 100%;
+	font-size: 18px;
+	color: #6C4A3A;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px 50px;
+
+}
+div#story div.bashliq2, div#team div.bashliq2,div#customers div.bashliq2{
+	width: 100%;
+	height: 100px;
+	line-height: 120px;
+	text-align: center;
+}
+div#story div.bashliq2 h2, div#team div.bashliq2 h2,div#customers div.bashliq2 h2{
+	font-size: 33px;
+}
+div#story p,div#team p,div#customers p{
+	width: 50%;
+	padding: 10px;
+	text-align: justify;
+	text-indent: 30px;
+	letter-spacing: 0.5px;
+	padding: 20px;
+	font-size: 17px;
+}
+div#story img,div#team img,div#customers img{
+	padding: 10px;
+	height: 300px;
+	width: 50%;
+	padding: 20px;
+	border-radius: 30px;
+}
+/*--------------------------------------MEDIA--------------------------------------------*/
+@media only screen and (min-width: 992px) {
+	header div.menu{
+		display: none;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	div.sira{
+		width: 25%;
+	}
+	div.sec2 div.news div.new{
+		width: 20%;
+		padding: 50px;
+	}
+	footer div.legs{
+		width: 25%;
+	}
+	div#story img,div#team img,div#customers img{
+		height: 340px;
+	}
+	div.ikili, div.ikili div.new{
+		display: none;
+	}
+}
+@media only screen and (max-width: 992px) {
+	header ul.first li{
+		display: none;
+	}
+	header div.menu{
+		display: block;
+	}
+	header div.search{
+		right: 50px;
+	}
+	header div.logo a{
+		font-size: 35px;
+	}
+	div.backimage{
+		height: 450px;
+	}
+	div#container h1{
+		letter-spacing: 5px;
+		margin-top: 45px;
+		font-size: 25px;
+	}
+	div.sira{
+		width: 33.3%;
+	}
+	div.sec2 div.news div.new{
+		width: 25%;
+		padding: 40px;
+	}
+	footer div.legs{
+		width: 33.3%;
+	}
+	div.aboutus{
+		height: 400px;
+	}
+	div.about div.bashliq h2{
+		font-size: 35px;
+		letter-spacing: 1px;
+	}
+	div#story p,div#team p,div#customers p{
+		width: 100%;
+	}
+	div#story img,div#team img,div#customers img{
+		height: 330px;
+		width: 100%;
+	}
+	div.contact div.bashliq h2{
+		font-size: 35px;
+		letter-spacing: 1px;
+	}
+	div.contact div.map{
+		height: 400px;
+	}
+	div.meetus div.meet1{
+		padding: 30px;
+	}
+	div.meetus div.meet2{
+		padding: 30px;
+	}
+	div.login div.bashliq h2{
+		font-size: 35px;
+		letter-spacing: 1px;
+	}
+	div.signup div.bashliq h2{
+		font-size: 35px;
+		letter-spacing: 1px;
+	}
+	div.buttons{
+		margin-top: 330px;
+	}
+	div.loginform{
+		height: 400px;
+	}
+	div.login div.form{
+		width: 350px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	div.sira{
+		width: 40%;
+	}
+	div.sec2 div.news div.new{
+		width: 33.3%;
+		padding: 40px;
+	}
+	footer div.legs{
+		width: 33.3%;
+	}
+	div.meetus{
+		background-image: none !important;
+	}
+	div.meets{
+		height: 630px;
+	}
+	div.meet2 textarea{
+		border: 1px solid orange !important;
+	}
+	div.contact div.meetus div.meet2 textarea:hover{
+		border: 1px solid rgb(47, 255, 75) !important;
+	}
+	div.meetus h2{
+		color: #6C4A3A !important;
+	}
+	div.meetus div.meet1{
+		width: 100%;
+		padding: 30px 110px;
+		color: #6C4A3A;
+	}
+	div.meetus div.meet2{
+		width: 100%;
+		color: #6C4A3A;
+		padding: 30px 110px;
+	}
+	div#story img,div#team img,div#customers img{
+		height: 330px;
+		width: 100%;
+	}
+	div.contact div.meetus div.meet2 textarea{
+		width: 80%;
+	}
+	div.about div.bashliq, div.contact div.bashliq, div.login div.bashliq, div.signup div.bashliq{
+		height: 100px;
+	}
+	div.about div.bashliq h2, div.contact div.bashliq h2, div.login div.bashliq h2, div.signup div.bashliq h2{
+		padding-top: 25px;
+	}
+}
+@media only screen and (max-width: 576px) {
+	header div.logo a{
+		font-size: 30px;
+	}
+	div.backimage{
+		height: 350px;
+	}
+	div#container h1{
+		margin-top: 40px;
+		font-size: 17px;
+		letter-spacing: 1px;
+	}
+	div.sira{
+		width: 50%;
+	}
+	div.sec2 div.news div.new{
+		width: 50%;
+		padding: 50px;
+	}
+	footer div.legs{
+		width: 50%;
+	}
+	div.aboutus{
+		height: 300px;
+	}
+	div.about div.bashliq h2{
+		font-size: 30px;
+		letter-spacing: 1px;
+	}
+	div.contact div.bashliq h2{
+		font-size: 30px;
+		letter-spacing: 1px;
+	}
+	div.contact div.map{
+		height: 300px;
+	}
+	div.meetus div.meet1{
+		width: 100%;
+		padding: 30px;
+	}
+	div.meetus div.meet2{
+		width: 100%;
+		padding: 30px;
+	}
+	div.contact div.meetus div.meet2 textarea{
+		width: 70%;
+	}
+	div.login div.bashliq h2{
+		font-size: 30px;
+		letter-spacing: 1px;
+	}
+	div.signup div.bashliq h2{
+		font-size: 30px;
+		letter-spacing: 1px;
+	}
+	div#story img,div#team img,div#customers img{
+		height: 250px;
+	}
+	div.buttons{
+		margin-top: 250px;
+	}
+	div.loginform{
+		height: 280px;
+	}
+	div.loginform img{
+		display: none;
+	}
+	div.login div.form{
+		width: 100%;
+		height: 100%;
+	}
+	div.login div.form h2, div.login div.form input, div.login div.form a{
+		font-size: 15px;
+	}
+	div.signupform{
+		height: 460px;
+	}
+	div.signupform img{
+		display: none;
+	}
+	div.signup div.form1{
+		width: 100%;
+		height: 100%;
+		padding: 5%;
+	}
+	div.signup div.form1 input.names{
+		width: 100%;
+	}
+	div.signup div.form1 input.name2{
+		margin: 4% 0 0 0;
+	}
+	div.signup div.form1 h2{
+		font-size: 18px;
+	}
+	div#story div.bashliq2 h2, div#team div.bashliq2 h2,div#customers div.bashliq2 h2{
+		font-size: 25px;
+	}
+	div#story, div#team,div#customers{
+		padding: 0px 20px;
+	}
+	div.books button{
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	header div.logo a{
+		margin: 10px 20px ;
+		font-size: 20px;
+	}
+	div.backimage{
+		height: 300px;
+	}
+	div#container h1{
+		margin-top: 35px;
+		font-size: 13px;
+		letter-spacing: 1px;
+	}
+	div.sira{
+		width: 100%;
+		padding: 20px 50px;
+	}
+	div.sec2 div.news div.new{
+		width: 50%;
+		padding: 20px;
+	}
+	footer div.legs{
+		width: 100%;
+	}
+	div.aboutus{
+		height: 250px;
+	}
+	div.about div.bashliq h2{
+		font-size: 25px;
+		letter-spacing: 1px;
+	}
+	div.contact div.bashliq h2{
+		font-size: 25px;
+		letter-spacing: 1px;
+	}
+	div.contact div.map{
+		height: 250px;
+	}
+	div.meetus div.meet1{
+		width: 100%;
+		padding: 20px;
+	}
+	div.meetus div.meet2{
+		width: 100%;
+		padding: 20px;
+	}
+	div.contact div.meetus div.meet2 textarea{
+		width: 80%;
+	}
+	div.login div.bashliq h2{
+		font-size: 25px;
+		letter-spacing: 1px;
+	}
+	div.signup div.bashliq h2{
+		font-size: 25px;
+		letter-spacing: 1px;
+	}
+	div#story img,div#team img,div#customers img{
+		height: 200px;
+	}
+	div#story p,div#team p,div#customers p{
+		font-size: 15px;
+	}
+	div.buttons{
+		margin-top: 210px;
+	}
+	div.login div.form input, div.login div.form a{
+		font-size: 14px;
+	}
+	div.signup div.form1 h2{
+		font-size: 17px;
+	}
+	div#story div.bashliq2 h2, div#team div.bashliq2 h2,div#customers div.bashliq2 h2{
+		font-size: 20px;
+	}
+	div#story, div#team,div#customers{
+		padding: 0px 10px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
